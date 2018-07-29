@@ -1,28 +1,74 @@
-.App {
+.projects-grid{
+  display:flex;
+}
+
+.contact-body{
+  margin: auto;
+  background: grey;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid{
   text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  border: 2px solid red;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+  z-index: 1
+}
+.popup_inner {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 9.5%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+   overflow: scroll;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.close-popup {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
 }
-
-.App-title {
-  font-size: 1.5em;
+.close-popup:hover {
+  opacity: 1;
 }
-
-.App-intro {
-  font-size: large;
+.close-popup:before, .close-popup:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.close-popup:before {
+  transform: rotate(45deg);
+}
+.close-popup:after {
+  transform: rotate(-45deg);
 }

@@ -3,14 +3,17 @@ import './App.css';
 import { Layout, Header,Navigation,Drawer,Content } from  'react-mdl';
 import  Main from './components/main';
 import{ Link } from 'react-router-dom';
+import  Contact from './components/contact';
+import  Projects from './components/projects';
 
 class App extends Component {
   render() {
     return (
       <div className="demo-big-content">
         <Layout>
-            <Header title="Title" scroll>
+            <Header title="Ranjan" scroll>
                 <Navigation>
+                    <Link to="/">Home</Link>
                     <Link to="/resume">Resume</Link>
                     <Link to="/aboutme">AboutMe</Link>
                     <Link to="/projects">Projects</Link>
@@ -29,6 +32,7 @@ class App extends Component {
                 <div className="page-content" />
                 <Main />
             </Content>
+            
         </Layout>
     </div>
     );
