@@ -6,31 +6,23 @@ import  Main from './components/main';
 import{ Link } from 'react-router-dom';
 import  Contact from './components/contact';
 import  Projects from './components/projects';
+import  LandingPage from './components/landingpage';
 
 class App extends Component {
   render() {
     return (
       <div className="demo-big-content">
-        <Layout>
-            <Header title="Ranjan Bir Bajracharya" scroll>
-                <Navigation>
-                    <Link to="/">Home</Link>
-
-                    <Link to="/projects">Projects</Link>
-                </Navigation>
-            </Header>
-            <Drawer title="Ranjan">
-                <Navigation>
-                  <Link to="/projects">Projects</Link>
-                </Navigation>
-            </Drawer>
-            <Content>
-                <div className="page-content" />
-                <Main />
-            </Content>
-
-        </Layout>
-    </div>
+        <div class="navbar">
+          <a href="index.html#education">Education</a>
+          <a href="index.html#achivement">Achivement</a>
+          <a href="index.html#project">Project</a>
+          <a href="index.html#skill">Skill</a>
+          <a href="index.html#social-link">Social-link</a>
+        </div>
+        <div className="main" >
+          <LandingPage />
+        </div>
+      </div>
     );
   }
 }

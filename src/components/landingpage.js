@@ -1,7 +1,7 @@
 import  React, {Component} from 'react';
 import pic from '../images/pic.jpg';
 import '../style.css';
-
+import Projects from './projects'
 class LandingPage extends Component{
   render(){
     return(
@@ -17,12 +17,13 @@ class LandingPage extends Component{
                       style={{height: '650px'}}
                        />
                   </div>
+                  <h2> Ranjan Bir Bajracharya (MSP 2017)</h2>
                 </div>
               </div>
             </div>
          </section>
 
-          <section class="section-space-padding">
+          <section class="section-space-padding" id="education">
             <div class="container">
              <div class="row">
                   <div class="col-sm-12">
@@ -126,8 +127,67 @@ class LandingPage extends Component{
               </div>
             </div>
          </section>
+         <section class="section-space-padding" id="achivement">
+          <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                   <div class="section-title">
+                       <h1>Achivements</h1>
+                        <div class="divider dark">
+              <i class="icon-graduation"></i>
+                       </div>
+                 </div>
+             </div>
 
-         <section class="skills">
+             <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <div class="experience">
+                <div class="experience-item">
+                  <div class="experience-circle experience-company pink-color-bg" style={{ top:"-15px"}}>
+                    <p>Hackathon</p>
+                  </div>
+                  <div class="experience-content experience-color-blue">
+                    <h4>Spirathon 2017 (Second Runner Up)</h4>
+                  </div>
+                </div>
+
+                <div class="experience-item">
+                  <div class="experience-circle experience-company pink-color-bg" style={{ top:"-15px"}}>
+                    <p>Hackathon</p>
+                  </div>
+                  <div class="experience-content experience-color-blue">
+                    <h4>NASA Space App Challenge 2017</h4>
+                  </div>
+                </div>
+
+                <div class="experience-item">
+                  <div class="experience-circle experience-company pink-color-bg" style={{ top:"-15px"}}>
+                    <p>Hackathon</p>
+                  </div>
+                  <div class="experience-content experience-color-blue">
+                    <h4>NOSKode(Open Coding Competition) 2016 winner</h4>
+                  </div>
+                </div>
+
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
+         </section>
+          <section class="section-space-padding" id="project">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                        <h1>Projects</h1>
+                     </div>
+                  </div>
+                  <Projects />
+              </div>
+            </div>
+          </section>
+         <section class="section-space-padding" id="skill">
            <div class="container">
             <div class="row">
                  <div class="col-sm-12">
@@ -148,7 +208,7 @@ class LandingPage extends Component{
             </div>
           </div>
          </section>
-         <footer class="page-footer font-small cyan darken-3">
+         <footer class="page-footer font-small cyan darken-3" id="social-link">
             <div class="container">
             <div class="row">
               <div class="col-sm-12">
