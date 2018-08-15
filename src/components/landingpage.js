@@ -80,50 +80,9 @@ class LandingPage extends Component{
                 </div>
               </div>
 
-              <div class="row">
-                   <div class="col-sm-12">
-                       <div class="section-title">
-                           <h1>Achivements</h1>
-                            <div class="divider dark">
-                  <i class="icon-graduation"></i>
-                           </div>
-                     </div>
-                 </div>
-              </div>
 
-              <div class="row">
-                <div class="col-md-6 col-sm-6">
-                  <div class="experience">
-                    <div class="experience-item">
-                      <div class="experience-circle experience-company pink-color-bg" style={{ top:"-15px"}}>
-                        <p>Hackathon</p>
-                      </div>
-                      <div class="experience-content experience-color-blue">
-                        <h4>Spirathon 2017 (Second Runner Up)</h4>
-                      </div>
-                    </div>
 
-                    <div class="experience-item">
-                      <div class="experience-circle experience-company pink-color-bg" style={{ top:"-15px"}}>
-                        <p>Hackathon</p>
-                      </div>
-                      <div class="experience-content experience-color-blue">
-                        <h4>NASA Space App Challenge 2017</h4>
-                      </div>
-                    </div>
 
-                    <div class="experience-item">
-                      <div class="experience-circle experience-company pink-color-bg" style={{ top:"-15px"}}>
-                        <p>Hackathon</p>
-                      </div>
-                      <div class="experience-content experience-color-blue">
-                        <h4>NOSKode(Open Coding Competition) 2016 winner</h4>
-                      </div>
-                    </div>
-
-                  </div>
-                  </div>
-                </div>
               </div>
             </div>
          </section>
