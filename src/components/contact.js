@@ -1,6 +1,6 @@
 import  React, {Component} from 'react';
 import { Grid, Cell,List,ListItem,ListItemContent, Textfield,Button,Card } from 'react-mdl';
-
+import RANJAN from '../images/Ranjan.JPG';
 class Contact extends Component{
   render(){
     return(
@@ -9,7 +9,7 @@ class Contact extends Component{
           <Cell col={6}>
           <h2>Ranjan Bir Bajracharya</h2>
           <img
-          src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
+          src={RANJAN}
           alt="avatar"
           style={{height: '250px'}}
            />
@@ -32,38 +32,14 @@ class Contact extends Component{
            </Cell>
           <Cell col={6}>
             <h1> Contact Me </h1>
-            <Card shadow={0} style={{width: '500px', height: '600px', margin: 'auto',padding: '10px'}}>
+            <a href="https://www.facebook.com/ranjan.bajracharya" target="_blank" class="fa fa-facebook"></a><br/>
+            <a href="https://twitter.com/ran_bajra"  target="_blank" class="fa fa-linkedin"></a><br/>
+            <a href="www.linkedin.com/in/ranjan-bajracharya-3b22bb131"  target="_blank" class="fa fa-twitter"></a><br/>
+            <a href="https://medium.com/@ran_bajra"  target="_blank" class="fa-medium fa"></a>
 
-              <div>
-                <Textfield
-                  onChange={() => {}}
-                  label="Your Name"
-                  floatingLabel
-                  style={{width: '500px'}}
-                  />
-              </div>
-              <div>
-                <Textfield
-                  onChange={() => {}}
-                  label="Email"
-                  floatingLabel
-                  style={{width: '500px'}}
-                  />
-              </div>
-              <div>
-                <Textfield
-                  onChange={() => {}}
-                  label="Message"
-                  floatingLabel
-                  rows={3}
-                  style={{width: '500px'}}
-                  />
-              </div>
-              <Button raised>Button</Button>
-                </Card>
+
            </Cell>
         </Grid>
-        <h1> hfsdlkfjs;a j asjdf</h1>
       </div>
     )
   }
